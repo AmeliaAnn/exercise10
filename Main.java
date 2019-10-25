@@ -18,12 +18,12 @@ public class Main {
    int[][] arr = new int[rows][cols];
         
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) 
-            System.out.println("Заполните матицу:"); {
-            arr[i][j] = in.nextInt();
-                
-              }
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print("Введите элемент arr[" + i + "][" + j + "]:");
+                arr[i][j] = in.nextInt();
+            }   
         }
-        
-  }
+        in.close();
+      }
+
 }
