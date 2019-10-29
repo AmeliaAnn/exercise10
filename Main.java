@@ -14,23 +14,29 @@ public class Main {
         System.out.print("Введите количество столбцов матрицы: ");
       int  cols = in.nextInt();
       
-  int[][] arr = new int[rows][cols];
+  
+  
+    int[][] arr = new int[rows][cols];
 
-   for (int i = 0; i < arr.length; i++) {
-   for (int j = 0; j < arr[i].length; j++) {
-System.out.print("Введите элемент arr[" + i + "][" + j + "]:");
-arr[i][j] = in.nextInt();
+    for (int i = 0; i < arr.length; i++) {
+       for (int j = 0; j < arr[i].length; j++) {
+        System.out.println("Введите элемент arr[" + i + "][" + j + "]:");
+         
+        arr[i][j] = in.nextInt();
        
-    
-in.close();
-  
-  
-  do (i * 3) {
-  System.out.println("1 строка умноженная на 3: arr[" + i + "][" + j + "]:");
-  i++;
-       } while (arr[0][j]);
-      }
+        }
+        
+        i = 0;
+        while (i < arr[0].length) {
+        System.out.println(arr[0][i]*3);
+        i++;
+          
+          }
+       System.out.println(Arrays.toString(arr));
+        
      }
-    }
+    in.close();
+     
     
+  }
 }
