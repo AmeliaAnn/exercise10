@@ -12,8 +12,7 @@ public class Main {
       int  rows = in.nextInt();
                 
         System.out.print("Введите количество столбцов матрицы: ");
-      int  cols = in.nextInt();
-      
+      int  cols = in.nextInt();  
   
   
     int[][] arr = new int[rows][cols];
@@ -23,20 +22,20 @@ public class Main {
         System.out.println("Введите элемент arr[" + i + "][" + j + "]:");
          
         arr[i][j] = in.nextInt();
-       
-        }
+  }
+
+}
         
-        i = 0;
+        int i = 0;
         while (i < arr[0].length) {
         System.out.println(arr[0][i]*3);
         i++;
           
           }
-       System.out.println(Arrays.toString(arr));
-        
-     }
-    in.close();
+       System.out.println(Arrays.toString(arr[0]));
+ in.close();
      
     
   }
+  
 }
